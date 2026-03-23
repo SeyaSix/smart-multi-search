@@ -390,22 +390,6 @@ body {
   box-shadow: 0 16px 40px rgba(0, 80, 160, 0.16), 0 4px 12px rgba(0,0,0,0.3);
   border-color: rgba(0, 80, 160, 0.35);
 }
-.group-showcase-card.featured {
-  border-color: var(--accent-mid);
-  box-shadow: 0 0 0 1px rgba(0, 80, 160, 0.2), 0 8px 30px rgba(0, 80, 160, 0.15);
-}
-
-.gs-badge {
-  position: absolute;
-  top: -12px; left: 50%; transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--accent-mid), var(--accent));
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 3px 14px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
 
 .gs-icon { font-size: 32px; margin-bottom: 10px; }
 
