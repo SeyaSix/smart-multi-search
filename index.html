@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Multi-Search — Extension Chrome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <span>Smart Multi-Search</span>
+      </div>
+      <a href="#install" class="btn-nav">Installer gratuitement</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container">
+      <div class="badge">Extension Chrome · Gratuite · Open Source</div>
+      <h1>
+        Recherchez partout,<br/>
+        <span class="gradient-text">en un seul geste.</span>
+      </h1>
+      <p class="hero-desc">
+        Tapez votre requête une fois, obtenez des résultats simultanés sur Google, MDN,
+        StackOverflow, GitHub, YouTube et bien d'autres — sans jongler entre les onglets.
+      </p>
+      <div class="hero-actions">
+        <a href="#install" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Ajouter à Chrome
+        </a>
+        <a href="#fonctionnalites" class="btn-secondary">Voir les fonctionnalités</a>
+      </div>
+
+      <!-- Aperçu de la popup -->
+      <div class="popup-preview">
+        <div class="popup-chrome-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="popup-url">Smart Multi-Search</span>
+        </div>
+        <div class="popup-body">
+          <div class="pp-header">
+            <div class="pp-logo"></div>
+            <span class="pp-title">Smart Multi-Search</span>
+          </div>
+          <div class="pp-input-wrap">
+            <input class="pp-input" type="text" placeholder="Tapez votre recherche…" readonly />
+            <span class="pp-cursor"></span>
+          </div>
+          <div class="pp-groups">
+            <div class="pp-card active" data-label="💻 Dev" data-sites="Google · MDN · StackOverflow"></div>
+            <div class="pp-card" data-label="📚 Docs" data-sites="React · Tailwind CSS · GitHub"></div>
+            <div class="pp-card" data-label="🎮 Loisirs" data-sites="YouTube · Reddit"></div>
+          </div>
+          <div class="pp-footer">Entrée → groupe sélectionné : <strong>Dev</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FONCTIONNALITÉS ===== -->
+  <section class="section" id="fonctionnalites">
+    <div class="container">
+      <div class="section-label">Fonctionnalités</div>
+      <h2>Tout ce dont vous avez besoin,<br/>rien de superflu.</h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Ultra rapide</h3>
+          <p>Ouvre tous les onglets de recherche instantanément dès que vous appuyez sur Entrée.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Groupes ciblés</h3>
+          <p>3 groupes prédéfinis : Dev, Docs, Loisirs. Choisissez le bon contexte en un clic.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌙</div>
+          <h3>Dark mode natif</h3>
+          <p>Interface sombre soignée, conçue pour ne pas agresser les yeux lors de longues sessions.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Aucune donnée collectée</h3>
+          <p>Tout fonctionne localement dans votre navigateur. Zéro serveur, zéro tracking.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3>Persistance sync</h3>
+          <p>Vos groupes sont sauvegardés via <code>chrome.storage.sync</code> et suivent votre compte Google.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛠</div>
+          <h3>Personnalisable</h3>
+          <p>Modifiez les sites de chaque groupe à votre guise — la configuration reste en mémoire.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GROUPES ===== -->
+  <section class="section section-dark" id="groupes">
+    <div class="container">
+      <div class="section-label">Groupes par défaut</div>
+      <h2>Trois contextes,<br/>des dizaines de sites.</h2>
+      <div class="groups-showcase">
+
+        <div class="group-showcase-card">
+          <div class="gs-icon">💻</div>
+          <div class="gs-name">Dev</div>
+          <div class="gs-sites">
+            <span>Google</span><span>MDN</span><span>StackOverflow</span>
+          </div>
+          <p class="gs-desc">Idéal pour déboguer, chercher une API ou trouver une réponse technique en un clin d'œil.</p>
+        </div>
+
+        <div class="group-showcase-card featured">
+          <div class="gs-badge">Le plus utilisé</div>
+          <div class="gs-icon">📚</div>
+          <div class="gs-name">Docs</div>
+          <div class="gs-sites">
+            <span>React</span><span>Tailwind CSS</span><span>GitHub</span>
+          </div>
+          <p class="gs-desc">Retrouvez la documentation officielle de vos frameworks préférés sans perdre de temps.</p>
+        </div>
+
+        <div class="group-showcase-card">
+          <div class="gs-icon">🎮</div>
+          <div class="gs-name">Loisirs</div>
+          <div class="gs-sites">
+            <span>YouTube</span><span>Reddit</span>
+          </div>
+          <p class="gs-desc">Pour explorer un sujet créatif, trouver une vidéo ou lire les discussions de la communauté.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTALLATION ===== -->
+  <section class="section" id="install">
+    <div class="container container-narrow">
+      <div class="section-label">Installation</div>
+      <h2>Prêt en 30 secondes.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Télécharger l'extension</h4>
+            <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier ZIP de l'extension.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Ouvrir Chrome Extensions</h4>
+            <p>Rendez-vous sur <code>chrome://extensions</code> et activez le <strong>Mode développeur</strong>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Charger l'extension</h4>
+            <p>Cliquez sur <strong>Charger l'extension non empaquetée</strong> et sélectionnez le dossier.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>C'est tout !</h4>
+            <p>L'icône apparaît dans Chrome. Cliquez dessus, tapez votre recherche et appuyez sur Entrée.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-primary btn-large">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Télécharger Smart Multi-Search
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <div class="logo-icon small">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        Smart Multi-Search
+      </div>
+      <p class="footer-copy">Extension Chrome open source · Manifest V3 · Aucune donnée collectée</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
