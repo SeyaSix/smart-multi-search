@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
+
   <nav class="nav">
     <div class="nav-inner">
       <div class="nav-logo">
@@ -19,11 +19,11 @@
         </div>
         <span>Smart Multi-Search</span>
       </div>
-      <a href="#install" class="btn-nav">Installer gratuitement</a>
+      <a href="https://chrome.google.com/webstore" target="_blank" class="btn-nav">Ajouter à Chrome</a>
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
+  
   <section class="hero">
     <div class="hero-bg-glow"></div>
     <div class="container">
@@ -34,17 +34,18 @@
       </h1>
       <p class="hero-desc">
         Tapez votre requête une fois, obtenez des résultats simultanés sur Google, MDN,
-        StackOverflow, GitHub, YouTube et bien d'autres — sans jongler entre les onglets.
+        StackOverflow, GitHub, YouTube et bien d'autres — 4 groupes prêts à l'emploi,
+        100&nbsp;% personnalisables.
       </p>
       <div class="hero-actions">
-        <a href="#install" class="btn-primary">
+        <a href="https://chrome.google.com/webstore" target="_blank" class="btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Ajouter à Chrome
+          Ajouter à Chrome — Gratuit
         </a>
         <a href="#fonctionnalites" class="btn-secondary">Voir les fonctionnalités</a>
       </div>
 
-      <!-- Aperçu de la popup -->
+   
       <div class="popup-preview">
         <div class="popup-chrome-bar">
           <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
@@ -57,20 +58,20 @@
           </div>
           <div class="pp-input-wrap">
             <input class="pp-input" type="text" placeholder="Tapez votre recherche…" readonly />
-            <span class="pp-cursor"></span>
           </div>
           <div class="pp-groups">
             <div class="pp-card active" data-label="💻 Dev" data-sites="Google · MDN · StackOverflow"></div>
-            <div class="pp-card" data-label="📚 Docs" data-sites="React · Tailwind CSS · GitHub"></div>
+            <div class="pp-card" data-label="📚 Docs" data-sites="React · Tailwind · GitHub"></div>
             <div class="pp-card" data-label="🎮 Loisirs" data-sites="YouTube · Reddit"></div>
+            <div class="pp-card" data-label="🔍 Mot-clé" data-sites="Google · Bing · DuckDuckGo · Qwant"></div>
           </div>
-          <div class="pp-footer">Entrée → groupe sélectionné : <strong>Dev</strong></div>
+          <div class="pp-footer">Entrée → groupe actif : <strong>Dev</strong> &nbsp;·&nbsp; ⚙ Paramètres</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FONCTIONNALITÉS ===== -->
+
   <section class="section" id="fonctionnalites">
     <div class="container">
       <div class="section-label">Fonctionnalités</div>
@@ -79,49 +80,49 @@
 
         <div class="feature-card">
           <div class="feature-icon">⚡</div>
-          <h3>Ultra rapide</h3>
-          <p>Ouvre tous les onglets de recherche instantanément dès que vous appuyez sur Entrée.</p>
+          <h3>Recherche simultanée</h3>
+          <p>Un appui sur Entrée ouvre tous les onglets de recherche en une fraction de seconde.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon">🎯</div>
-          <h3>Groupes ciblés</h3>
-          <p>3 groupes prédéfinis : Dev, Docs, Loisirs. Choisissez le bon contexte en un clic.</p>
+          <h3>4 groupes prêts à l'emploi</h3>
+          <p>Dev, Docs, Loisirs et Mot-clé SEO. Choisissez le bon contexte, lancez — c'est tout.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">🌙</div>
-          <h3>Dark mode natif</h3>
-          <p>Interface sombre soignée, conçue pour ne pas agresser les yeux lors de longues sessions.</p>
+          <div class="feature-icon">🛠</div>
+          <h3>Groupes 100 % personnalisables</h3>
+          <p>Créez vos propres groupes, modifiez les sites existants ou supprimez-les via la page ⚙ Paramètres.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon">🔒</div>
           <h3>Aucune donnée collectée</h3>
-          <p>Tout fonctionne localement dans votre navigateur. Zéro serveur, zéro tracking.</p>
+          <p>Tout fonctionne localement dans votre navigateur. Zéro serveur, zéro tracking, zéro compte.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon">💾</div>
-          <h3>Persistance sync</h3>
-          <p>Vos groupes sont sauvegardés via <code>chrome.storage.sync</code> et suivent votre compte Google.</p>
+          <h3>Sync automatique</h3>
+          <p>Vos groupes sont sauvegardés via <code>chrome.storage.sync</code> et suivent votre compte Google sur tous vos appareils.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">🛠</div>
-          <h3>Personnalisable</h3>
-          <p>Modifiez les sites de chaque groupe à votre guise — la configuration reste en mémoire.</p>
+          <div class="feature-icon">⌨️</div>
+          <h3>Navigation clavier</h3>
+          <p>Focus automatique à l'ouverture, Entrée pour le groupe actif, clic sur une carte pour en changer — sans jamais toucher la souris.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===== GROUPES ===== -->
+
   <section class="section section-dark" id="groupes">
     <div class="container">
       <div class="section-label">Groupes par défaut</div>
-      <h2>Trois contextes,<br/>des dizaines de sites.</h2>
+      <h2>Quatre contextes,<br/>des dizaines de sites.</h2>
       <div class="groups-showcase">
 
         <div class="group-showcase-card">
@@ -152,48 +153,30 @@
           <p class="gs-desc">Pour explorer un sujet créatif, trouver une vidéo ou lire les discussions de la communauté.</p>
         </div>
 
+        <div class="group-showcase-card">
+          <div class="gs-icon">🔍</div>
+          <div class="gs-name">Mot-clé SEO</div>
+          <div class="gs-sites">
+            <span>Google</span><span>Bing</span><span>DuckDuckGo</span><span>Qwant</span>
+          </div>
+          <p class="gs-desc">Comparez la visibilité d'un mot-clé sur les 4 principaux moteurs simultanément. Parfait pour la veille SEO.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== INSTALLATION ===== -->
+  <!-- ===== CTA ===== -->
   <section class="section" id="install">
-    <div class="container container-narrow">
-      <div class="section-label">Installation</div>
-      <h2>Prêt en 30 secondes.</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <div class="step-content">
-            <h4>Télécharger l'extension</h4>
-            <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier ZIP de l'extension.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-content">
-            <h4>Ouvrir Chrome Extensions</h4>
-            <p>Rendez-vous sur <code>chrome://extensions</code> et activez le <strong>Mode développeur</strong>.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-content">
-            <h4>Charger l'extension</h4>
-            <p>Cliquez sur <strong>Charger l'extension non empaquetée</strong> et sélectionnez le dossier.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <div class="step-content">
-            <h4>C'est tout !</h4>
-            <p>L'icône apparaît dans Chrome. Cliquez dessus, tapez votre recherche et appuyez sur Entrée.</p>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn-primary btn-large">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Télécharger Smart Multi-Search
+    <div class="container" style="text-align:center;">
+      <div class="section-label">Prêt ?</div>
+      <h2>Installez Smart Multi-Search<br/><span class="gradient-text">gratuitement.</span></h2>
+      <p style="max-width:500px;margin:0 auto 36px;color:var(--text-sub);font-size:1.05rem;line-height:1.7;">
+        Disponible sur le Chrome Web Store. Aucun compte, aucun abonnement — juste l'extension.
+      </p>
+      <a href="https://chrome.google.com/webstore" target="_blank" class="btn-primary btn-large">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Ajouter à Chrome — Gratuit
       </a>
     </div>
   </section>
@@ -209,7 +192,7 @@
         </div>
         Smart Multi-Search
       </div>
-      <p class="footer-copy">Extension Chrome open source · Manifest V3 · Aucune donnée collectée</p>
+      <p class="footer-copy">Extension Chrome open source · Manifest V3 · SeyaSix</p>
     </div>
   </footer>
 
